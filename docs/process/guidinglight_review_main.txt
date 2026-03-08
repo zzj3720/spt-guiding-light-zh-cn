@@ -1,0 +1,5 @@
+- [Curious_Light.zh.jsonc](C:/Users/3720/Downloads/_gl_translation_work/drafts/Curious_Light.zh.jsonc):49 renders `disembodied voices` as `无主语的声音`, which changes the meaning from bodiless voices to a grammar concept and makes the line misleading.
+
+- [Curious_Light.zh.jsonc](C:/Users/3720/Downloads/_gl_translation_work/drafts/Curious_Light.zh.jsonc):75 and [Curious_Light.zh.jsonc](C:/Users/3720/Downloads/_gl_translation_work/drafts/Curious_Light.zh.jsonc):80 still leave the actual branch choices in English (`Return to the first voice` / `Stay with this voice`) inside Chinese choice-confirmation descriptions. These quests exist only to lock in a branch, so the untranslated choice text can mislead Chinese-only players about what they are confirming.
+
+- [Guiding_Light.en.jsonc](C:/Users/3720/Downloads/_gl_subagent_drafts/Guiding_Light.en.jsonc):1839 uses `Scav 箱`, but official EFT terminology for `Scav case` is `Scav宝箱`. This is a UI/quest-condition term and should match the official wording.

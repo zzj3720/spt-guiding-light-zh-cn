@@ -1,0 +1,20 @@
+{
+  "packs": {
+    "Guiding_Light": {
+      "english_entries": 1748,
+      "chinese_entries": 1748,
+      "all_keys": 1748
+    },
+    "Curious_Light": {
+      "english_entries": 65,
+      "chinese_entries": 65,
+      "all_keys": 65
+    },
+    "Traders": {
+      "english_entries": 8,
+      "chinese_entries": 10,
+      "all_keys": 10
+    }
+  },
+  "total_rows": 1823
+}
