@@ -1,7 +1,11 @@
-# Guiding Light Manual Review Progress
+# Guiding Light GPT-5.4 Manual Review Progress
 
 Date: 2026-03-08
 Scope: `C:\Games\SPT-4.0\SPT\user\mods\SimpleTranslatorCS\db\locales\ch\GuidingLight`
+
+Note:
+- `Manual` here means row-by-row, hand-operated review executed by `GPT-5.4 / Codex`.
+- It does not mean a human translator manually reviewed every entry.
 
 Method for every reviewed entry:
 - Check the English source line.
@@ -22,9 +26,9 @@ Reference files:
 Total current rows in review sheet: `1823`
 Current reviewed rows: `1823 / 1823`
 
-## Manual audit status
+## GPT-5.4 manual audit status
 
-- The audit ledger has a manual keep/rewrite entry for all `1823` rows.
+- The audit ledger has a keep/rewrite entry for all `1823` rows from the GPT-5.4 row-by-row manual pass.
 - The final cleanup pass repaired the remaining `289` placeholder/mojibake rows and synced them into the live install, final payload, and repo mirrors.
 - The cleanup also normalized broken legacy audit notes into readable Chinese so the ledger is now inspectable end to end.
 - Rewrites in the final pass focused on:

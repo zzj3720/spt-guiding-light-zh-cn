@@ -1,4 +1,4 @@
-# Guiding Light Manual Translation Notes
+# Guiding Light GPT-5.4 Manual Translation Notes
 
 Date: 2026-03-08
 SPT target: 4.0.13
@@ -37,7 +37,7 @@ Approximate total: 3119 entries
 - Curious Light -> 好奇之光
 - Light of the World -> 世界之光
 - Celestial Plane -> 天界
-- Ground Zero -> 零号地带
+- Ground Zero -> 中心区
 - The Lab -> 实验室
 - Streets of Tarkov -> 塔科夫街区
 - Interchange -> 立交桥
@@ -64,4 +64,4 @@ Approximate total: 3119 entries
 
 ## Do not deploy yet
 
-- Do not copy any generated Guiding Light Chinese locale into the game until the manual pass is finished.
+- Do not copy any generated Guiding Light Chinese locale into the game until the GPT-5.4 row-by-row manual pass is finished.
