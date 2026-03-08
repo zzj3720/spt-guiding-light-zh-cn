@@ -54,6 +54,40 @@
 - 对照任务实际条件
 - 对照 EFT 原版现有中文术语
 
+## 工作方式
+
+本项目采用 `Codex` 工作流推进，并按 `GPT-5.4 + 人工逐条精校` 的标准组织审校过程。
+
+这里的重点不是“让模型自动翻完”，而是：
+
+- 用 Codex 处理提取、整理、对照、校验和回归检查
+- 用高强度推理模型辅助发现术语冲突、条件语义冲突和镜像漂移
+- 所有最终交付文本都以人工逐条确认作为准绳
+- 脚本只做回归检查，不替代人工审校本身
+
+换句话说，这个仓库的目标不是“快速生成一个能用的中文包”，而是保留一套能持续维护、能复核、能追责的汉化工程过程。
+
+## 审校流程
+
+这次整理大致按下面的顺序完成：
+
+1. 提取 `Guiding Light` 的 trader、主线、技能任务和镜像 locale。
+2. 建立 EFT 官方术语基线，先统一地图名、部位名、信任度、战局类措辞。
+3. 为每条文本同时对照三份信息：
+   - 英文原文
+   - 任务实际条件
+   - EFT 原版已存在的中文译法
+4. 逐条写入人工审校台账，标明是否保留、是否改写、修改依据和备注。
+5. 单独检查主 `en.jsonc` 中的镜像条目，确保它们和已人工确认的技能源 locale 完全一致。
+6. 最后再跑术语校验、玩法语义校验和镜像一致性校验，作为回归检查。
+
+这套流程里，最重要的原则是：
+
+- 不直接信任模型输出
+- 不把脚本扫描当成人工审校
+- 不让“看起来通顺”的中文覆盖掉任务真实条件
+- 不让新增文本偏离 EFT 原版已有术语
+
 当前仓库同时保留了：
 
 - [人工审校台账](./docs/audit/guidinglight_manual_audit.tsv)
@@ -61,6 +95,14 @@
 - [官方术语基线](./docs/EFT_official_terminology_baseline.md)
 - [Guiding Light 术语表](./docs/GuidingLight_term_glossary.md)
 - [过程文档索引](./docs/process/README.md)
+
+这些文件的作用分别是：
+
+- `guidinglight_manual_audit.tsv`: 逐条人工审校台账
+- `guidinglight_main_mirror_verification.tsv`: 主 locale 镜像和技能源 locale 的一致性结果
+- `guidinglight_review_sheet.tsv`: 全量 review sheet
+- `GuidingLight_manual_review_progress.md`: 阶段性进度记录
+- `GuidingLight_translation_notes.md`: 早期翻译范围和术语约束说明
 
 ## 校验
 
